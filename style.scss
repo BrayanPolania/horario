@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root {
+  --bgColor: #dedcd3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  font-size: 1vw;
+
+  background: var(--bgColor) url(https://);
+  background-size: cover;
+
+  min-height: 100vh;
+  width: 100%;
+}
+/* Scroll Personalizado */
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: hsl(110, 47%, 65%);
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar {
+    border-radius: 0;
+  }
+  *::-webkit-scrollbar-thumb {
+    /* background: rgba(255,255,255, .3); */
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+/* Scroll Personalizado */
+
+#containerP {
+  min-width: 801px;
+  min-height: 450px;
+  width: 100vw;
+  height: 56.25vw;
+  max-width: 100%;
+  max-height: 100vh;
+  background-color: #003346;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+
+
+  #containerHorario {
+    width: 90%;
+    height: 90%;
+    //background-color: #003346;
+  
+    display: grid;
+    grid-template-areas: "HS HRSS DAY DAY DAY DAY DAY"
+                         "HS HRSS CLS CLS CLS CLS CLS"
+                         "HS HRSS CLS CLS CLS CLS CLS"
+                         "HS HRSS CLS CLS CLS CLS CLS"
+                         "HS HRSS CLS CLS CLS CLS CLS"
+                         "HS HRSS CLS CLS CLS CLS CLS"
+                         "HS HRSS CLS CLS CLS CLS CLS"
+                         "HS HRSS CLS CLS CLS CLS CLS"
+                         "HS HRSS CLS CLS CLS CLS CLS"
+                         "HS HRSS CLS CLS CLS CLS CLS";
+    grid-template-columns: repeat(7, calc(90% / 7));
+    grid-template-rows: repeat(10, calc(90% / 10));
+    gap: 5px;
+    
+    div div {
+      width: 100%;
+      height: 100%;
+      // min-height: 82px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.1rem 0.15rem;
+
+      border-radius: 50% 20% / 10% 40%;
+      border: ridge rgb(226, 235, 240)  0.3125rem;
+      cursor: pointer;
+      &#none {
+        border: none;
+        cursor: auto;
+      }
+    }
+  }
+}
+
+#clases {
+  grid-area: CLS;
+
+  display: grid;
+  grid-template-areas: "QUI1 TEC1 INF1 TEC2 EF1"
+                       "QUI1 LC1	INF1 MAT3 EF1"
+                       "AR1  ESP1 CN1  MAT3 QUI2"
+                       "FIS1 ESP1 CP1  LC2  QUI2"
+                       "NONE NONE NONE NONE NONE"
+                       "FIS2 ING2 CP2  LC3  MAT4"
+                       "ING1 ING2 FIS3 REL1 FIL2"
+                       "FIL1 MAT2 ESP2 ING3 DZ1"
+                       "MAT1 MAT2 ESP2 ING3 DZ1";
+  grid-template-columns: repeat(5, calc(90% / 5));
+  grid-template-rows: repeat(9, calc(90% / 9));
+  gap: 5px;
+
+
+    div#none {
+      grid-area: NONE;
+    }
+
+  .QUI {
+    background-color: mediumspringgreen;
+  
+    &#QUI1 {
+      grid-area: QUI1;
+    }
+    &#QUI2 {
+      grid-area: QUI2;
+    }
+  }
+  .AR {
+    background-color: yellow;
+  
+    &#AR1 {
+      grid-area: AR1;
+    }
+  }
+  .FIS {
+    background-color: #e55550;
+  
+    &#FIS1 {
+      grid-area: FIS1;
+    }
+    &#FIS2 {
+      grid-area: FIS2;
+    }
+    &#FIS3 {
+      grid-area: FIS3;
+    }
+  }
+  .ING {
+    background-color: #56b2c7;
+  
+    &#ING1 {
+      grid-area: ING1;
+    }
+    &#ING2 {
+      grid-area: ING2;
+    }
+    &#ING3 {
+      grid-area: ING3;
+    }
+  }
+  .FIL {
+    background-color: orange;
+  
+    &#FIL1 {
+      grid-area: FIL1;
+    }
+    &#FIL2 {
+      grid-area: FIL2;
+    }
+  }
+  .MAT {
+    background-color: turquoise;
+  
+    &#MAT1 {
+      grid-area: MAT1;
+    }
+    &#MAT2 {
+      grid-area: MAT2;
+    }
+    &#MAT3 {
+      grid-area: MAT3;
+    }
+    &#MAT4 {
+      grid-area: MAT4;
+    }
+  }
+  .TEC {
+    background-color: pink;
+    &#TEC1 {
+      grid-area: TEC1;
+    }
+    &#TEC2 {
+      grid-area: TEC2;
+    }
+  }
+  .LC {
+    background-color: #b28cc5;
+    &#LC1 {
+      grid-area: LC1;
+    }
+    &#LC2 {
+      grid-area: LC2;
+    }
+    &#LC3 {
+      grid-area: LC3;
+    }
+  }
+  .ESP {
+    background-color: rgb(145, 145, 145);
+  
+    &#ESP1 {
+      grid-area: ESP1;
+    }
+    &#ESP2 {
+      grid-area: ESP2;
+    }
+  }
+  .INF {
+    background-color: #df734d;
+  
+    &#INF1 {
+      grid-area: INF1;
+    }
+  }
+  .CN {
+    background-color: greenyellow;
+  
+    &#CN1 {
+      grid-area: CN1;
+    }
+  }
+  .CP {
+    background-color: salmon;
+  
+    &#CP1 {
+      grid-area: CP1;
+    }
+    &#CP2 {
+      grid-area: CP2;
+    }
+  }
+  .REL {
+    background-color: fuchsia;
+  
+    &#REL1 {
+      grid-area: REL1;
+    }
+  }
+  .EF {
+    background-color: whitesmoke;
+  
+    &#EF1 {
+      grid-area: EF1;
+    }
+  }
+  .DZ {
+    background-color: gold;
+  
+    &#DZ1 {
+      grid-area: DZ1;
+    }
+  }
+}
+#days {
+  width: 100%;
+  height: 100%;
+  grid-area: DAY;
+
+  display: grid;
+  grid-template-areas: "L MR MI J V";
+  grid-template-columns: repeat(5, calc(90% / 5));
+  grid-template-rows: repeat(1, calc(90% / 1));
+  gap: 5px;
+
+  .day {
+    background-color: #a0d995;
+    &#L{
+        grid-area: L;
+    }
+    &#MR{
+      grid-area: MR;
+    }
+    &#MI{
+      grid-area: MI;
+    }
+    &#J{
+      grid-area: J;
+    }
+    &#V{
+      grid-area: V;
+    }
+  }
+}
+#hs {
+  width: 100%;
+  height: 100%;
+  grid-area: HS;
+
+  display: grid;
+  grid-template-areas: "HR"
+                       "H1"
+                       "H2"
+                       "H3"
+                       "H4"
+                       "DS"
+                       "H5"
+                       "H6"
+                       "H7"
+                       "H8";
+  grid-template-columns: repeat(1, calc(90% / 1));
+  grid-template-rows: repeat(10, calc(90% / 10));
+  gap: 5px;
+
+  .hs {
+    background-color: #a0d995;
+
+    &#HR {
+      grid-area: HR;
+    }
+    &#H1 {
+      grid-area: H1;
+    }
+    &#H2 {
+      grid-area: H2;
+    }
+    &#H3 {
+      grid-area: H3;
+    }
+    &#H4 {
+      grid-area: H4;
+    }
+    &#DS {
+      grid-area: DS;
+    }
+    &#H5 {
+      grid-area: H5;
+    }
+    &#H6 {
+      grid-area: H6;
+    }
+    &#H7 {
+      grid-area: H7;
+    }
+    &#H8 {
+      grid-area: H8;
+    }
+  }
+}
+#hrss {
+  width: 100%;
+  height: 100%;
+  grid-area: HRSS;
+
+  display: grid;
+  grid-template-areas: "HRS"
+                       "HR1"
+                       "HR2"
+                       "HR3"
+                       "HR4"
+                       "HRD"
+                       "HR5"
+                       "HR6"
+                       "HR7"
+                       "HR8";
+  grid-template-columns: repeat(1, calc(90% / 1));
+  grid-template-rows: repeat(10, calc(90% / 10));
+  gap: 5px;
+
+  .hrss {
+    background-color: #a0d995;
+    overflow: auto;
+    font-size: 1rem;
+
+&#HRS {
+  overflow: visible;
+  grid-area: HRS;
+}
+&#HR1 {
+  grid-area: HR1;
+}
+&#HR2 {
+  grid-area: HR2;
+}
+&#HR3 {
+  grid-area: HR3;
+}
+&#HR4 {
+  grid-area: HR4;
+}
+&#HRD {
+  grid-area: HRD;
+}
+&#HR5 {
+  grid-area: HR5;
+}
+&#HR6 {
+  grid-area: HR6;
+}
+&#HR7 {
+  grid-area: HR7;
+}
+&#HR8 {
+  grid-area: HR8;
+}
+  }
+}
+
+
+
+
+/*-----------------------MOBILE---------------------------*/
+@media (max-width: 801px) {
+div#containerP div#containerHorario div#hrss div.hrss {
+    align-items: normal;
+  }
+}
+
+@media (max-width: 780px) {
+  body {
+    font-size: 1.2vh;
+  }
+}
+@media (max-width: 430px) {
+
+
+
+}
+
+/*
+TODO: 
+FIXME: grid containerHorario 
+*/
