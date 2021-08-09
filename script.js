@@ -60,63 +60,63 @@ const quimica = document.querySelectorAll(".QUI"),
 function redict (e) {
   redirect: {
     if (e.target.className.includes("QUI") || e.target.parentElement.className.includes("QUI")) {
-      window.location= linksClases.quimica;
+      window.open(linksClases.quimica);
       break redirect;
     }
     if (e.target.className.includes("AR") || e.target.parentElement.className.includes("AR")) {
-      window.location= linksClases.artes;
+      window.open(linksClases.artes);
       break redirect;
     }
     if (e.target.className.includes("FIS") || e.target.parentElement.className.includes("FIS")) {
-      window.location= linksClases.fisica;
+      window.open(linksClases.fisica);
       break redirect;
     }
     if (e.target.className.includes("ING") || e.target.parentElement.className.includes("ING")) {
-      window.location= linksClases.ingles;
+      window.open(linksClases.ingles);
       break redirect;
     }
     if (e.target.className.includes("FIL") || e.target.parentElement.className.includes("FIL")) {
-      window.location= linksClases.filosofia;
+      window.open(linksClases.filosofia);
       break redirect;
     }
     if (e.target.className.includes("MAT") || e.target.parentElement.className.includes("MAT")) {
-      window.location= linksClases.matematicas;
+      window.open(linksClases.matematicas);
       break redirect;
     }
     if (e.target.className.includes("TEC") || e.target.parentElement.className.includes("TEC")) {
-      window.location= linksClases.tecnologia;
+      window.open(linksClases.tecnologia);
       break redirect;
     }
     if (e.target.className.includes("LC") || e.target.parentElement.className.includes("LC")) {
-      window.location= linksClases.lectura;
+      window.open(linksClases.lectura);
       break redirect;
     }
     if (e.target.className.includes("ESP") || e.target.parentElement.className.includes("ESP")) {
-      window.location= linksClases.español;
+      window.open(linksClases.español);
       break redirect;
     }
     if (e.target.className.includes("INF") || e.target.parentElement.className.includes("INF")) {
-      window.location= linksClases.informatica;
+      window.open(linksClases.informatica);
       break redirect;
     }
     if (e.target.className.includes("CN") || e.target.parentElement.className.includes("CN")) {
-      window.location= linksClases.biologia;
+      window.open(linksClases.biologia);
       break redirect;
     }
     if (e.target.className.includes("CP") || e.target.parentElement.className.includes("CP")) {
-      window.location= linksClases.politicas;
+      window.open(linksClases.politicas);
       break redirect;
     }
     if (e.target.className.includes("REL") || e.target.parentElement.className.includes("REL")) {
-      window.location= linksClases.religion;
+      window.open(linksClases.religion);
       break redirect;
     }
     if (e.target.className.includes("EF") || e.target.parentElement.className.includes("EF")) {
-      window.location= linksClases.edFisica;
+      window.open(linksClases.edFisica);
       break redirect;
     }
     if (e.target.className.includes("DZ") || e.target.parentElement.className.includes("DZ")) {
-      window.location= linksClases.danzas;
+      window.open(linksClases.danzas);
       break redirect;
     }
   }
