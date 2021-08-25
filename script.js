@@ -38,18 +38,18 @@ const quimica = document.querySelectorAll(".QUI"),
         quimica: "https://meet.google.com/lookup/aogjkflbpl",
         artes: "https://meet.google.com/nef-zpwv-ryr",
         fisica: "https://meet.google.com/lookup/dvdubcdvu4",
-        ingles: "404",
+        ingles: "https://classroom.google.com/c/MjY4MzM4MzM1NTQy?hl=es",
         filosofia: "http://meet.google.com/swq-yuqs-owu",
         matematicas: "https://meet.google.com/wab-ikqd-kbc",
-        tecnologia: "404",
-        lectura: "404",
-        español: "404",
-        informatica: "404",
+        tecnologia: "https://classroom.google.com/c/MjY4NTgzNTEzMDM1?hl=es",
+        lectura: "https://classroom.google.com/c/MjY4NDYzNjY2ODc3?hl=es",
+        español: "https://classroom.google.com/c/MjQ3OTk0OTAyMTg3?hl=es",
+        informatica: "https://classroom.google.com/c/MjY4NTgzNzAwNzYy?hl=es",
         biologia: "https://meet.google.com/lookup/d5ls5zlwpb",
         politicas: "https://meet.google.com/brj-jhky-khn",
         religion: "https://meet.google.com/cfw-bhan-wdi",
-        edFisica: "404",
-        danzas: "404"
+        edFisica: "https://classroom.google.com/c/MjY4Mzc1ODY2OTU5?hl=es",
+        danzas: "https://classroom.google.com/c/MjQ3NTk3MjcwMDk2?hl=es"
       }
 
 //let
