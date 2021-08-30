@@ -105,7 +105,7 @@ body{
                        "AR1  ESP1 CN1  MAT3 QUI2"
                        "FIS1 ESP1 CP1  LC2  QUI2"
                        "NONE NONE NONE NONE NONE"
-                       "FIS2 ING2 CP2  LC3  MAT4"
+                       "FIS2 ING2 CP2  LC3  ET1"
                        "ING1 ING2 FIS3 REL1 FIL2"
                        "FIL1 MAT2 ESP2 ING3 DZ1"
                        "MAT1 MAT2 ESP2 ING3 DZ1";
@@ -183,8 +183,12 @@ body{
     &#MAT3 {
       grid-area: MAT3;
     }
-    &#MAT4 {
-      grid-area: MAT4;
+  }
+  .ET {
+    background-color: darkcyan;
+  
+    &#ET1 {
+      grid-area: ET1;
     }
   }
   .TEC {

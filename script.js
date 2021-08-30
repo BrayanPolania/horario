@@ -16,6 +16,7 @@ const quimica = document.querySelectorAll(".QUI"),
       religion = document.querySelectorAll(".REL"),
       edFisica = document.querySelectorAll(".EF"),
       danzas =  document.querySelectorAll(".DZ"),
+      etica =  document.querySelectorAll(".ET"),
       clases = [
         quimica,
         artes,
@@ -31,7 +32,8 @@ const quimica = document.querySelectorAll(".QUI"),
         politicas,
         religion,
         edFisica,
-        danzas
+        danzas,
+        etica
       ],
       containerClases = document.querySelector("#clases"),
       linksClases = {
@@ -49,7 +51,8 @@ const quimica = document.querySelectorAll(".QUI"),
         politicas: "https://meet.google.com/brj-jhky-khn",
         religion: "https://meet.google.com/cfw-bhan-wdi",
         edFisica: "https://classroom.google.com/c/MjY4Mzc1ODY2OTU5?hl=es",
-        danzas: "https://classroom.google.com/c/MjQ3NTk3MjcwMDk2?hl=es"
+        danzas: "https://classroom.google.com/c/MjQ3NTk3MjcwMDk2?hl=es",
+        etica: "https://meet.google.com/eyr-xmhi-fzw"
       }
 
 //let
@@ -117,6 +120,10 @@ function redict (e) {
     }
     if (e.target.className.includes("DZ") || e.target.parentElement.className.includes("DZ")) {
       window.open(linksClases.danzas);
+      break redirect;
+    }
+    if (e.target.className.includes("ET") || e.target.parentElement.className.includes("ET")) {
+      window.open(linksClases.etica);
       break redirect;
     }
   }
@@ -191,6 +198,10 @@ for (let clase = 0; clase < clases.length; clase++) {
     }
     if (clases[clase] === danzas) {
       clases[clase][i].innerHTML = `<h1> DZ </h1>`;
+      continue;
+    }
+    if (clases[clase] === etica) {
+      clases[clase][i].innerHTML = `<h1> ET </h1>`;
       continue;
     }
   }
